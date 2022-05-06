@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/general.css" />
+        <script src="./js/index.js"></script>
+        <title>Carlos Peñaranda</title>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#email">Contacto</a></li>
+            </ul>
+            <button><a href="#" target="_blank" class="textoDestacado">Resumen</a></button>
+        </div>
+        <div id="presentacion">
+            <p class="textoDestacado">Hola, mi nombre es</p>
+            <h1 id="nombre">Carlos Peñaranda.</h1>
+            <h2>Hago cosas para ordenadores.</h2>
+            <p class="pDescripcion">
+                Soy <span class="textoDestacado">desarrollador de software</span> especializado en la parte Back-End
+                <br />aunque también sé algo de Front-End. Actualmente, estoy concentrado <br />en aprender
+                <span class="textoDestacado">Machine Learning</span> y lo relacionado con la
+                <span class="textoDestacado">IA</span>.
+            </p>
+        </div>
+        <div id="sobreMi">
+            <div>
+                <h2 class="tituloEnumerado">Sobre mi</h2>
+                <div>
+                    <div class="sDescripcion">
+                        <p>
+                            ¡Hola! Mi nombre es Carlos y es un gusto conocerte. Me gusta crear cosas que van tomando
+                            vida poco a poco a medida que pasa el tiempo. Mi interés por el desarrollo comenzó en 2014
+                            cuando comencé a editar webs con el "inspeccionar" - el que no cambia el mundo es por que no
+                            quiere.
+                        </p>
+                        <p>
+                            Hasta el día de hoy, he podido trabajar en proyectos pequeños los cuales me han enseñado que
+                            siempre hay que documentar, tener un banco de trabajo, tener un estándar a la hora de
+                            trabajar... En la actualidad mi principal objetivo es seguir aprendiendo las tecnologías que
+                            hay en el mundo laboral, sobretodo las dedicadas a IA.
+                        </p>
+                        <p>Aquí algunas tecnologías con las que he trabajado recientemente:</p>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>TensorFlow & Keras</li>
+                            <li>SQL</li>
+                            <li>JAVA</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="sFoto">
+                        <div></div>
+                        <img src="./images/img.jpg" alt="Foto de Carlos" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="conocimientos">
+            <div>
+                <h2 class="tituloEnumerado">Conocimientos</h2>
+                <div>
+                    <div class="cDescripcion">
+                        <ul>
+                            <li><button class="active" id="java" onClick="mostrarConocimiento(this.id)">JAVA</button></li>
+                            <li><button id="python" onClick="mostrarConocimiento(this.id)">Python</button></li>
+                            <li><button id="diseñoWeb" onClick="mostrarConocimiento(this.id)">Diseño Web</button></li>
+                            <li><button id="sql" onClick="mostrarConocimiento(this.id)">SQL</button></li>
+                            <li><button id="git" onClick="mostrarConocimiento(this.id)">Git</button></li>
+                        </ul>
+                        <div id="cContenido">
+                            <p>
+                                Empecé a aprender JAVA hace 6 años cuando quise montar mi propio videojuego online.
+                                Gracias a ese proyecto, pude aprender eventos, POO, lectura / escritura de archivos,
+                                bases de datos... Además, en este proyecto, me di cuenta de la importancia de documentar
+                                el código tanto si vas a trabajar con otros desarrolladores como si lo haces solo.
+                            </p>
+                            <p>Aquí proyectos pequeños con los que aprendí:</p>
+                            <ul>
+                                <li><a href="" class="link textoDestacado">Inventario de Productos</a></li>
+                                <li><a href="" class="link textoDestacado">Reservas de un hotel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="email">
+            <div>
+                <p class="textoDestacado">¿Qué es lo siguiente?</p>
+                <h2>Contacta conmigo</h2>
+                <p class="eDescripcion">
+                    Aunque actualmente no estoy buscando nuevas oportunidades, siempre estoy dispuesto a escucharlas. <br /> Ya sea que tenga una pregunta o simplemente quiera saludar, <br> ¡haré todo lo posible para responderle!
+                </p>
+                <button><a href="mailto:contactacarlos09@gmail.com" target="_blank" class="textoDestacado">Email</a></button>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><a href="http://github.com/carlospenaranda" target="_blank" class="textoDestacado">Diseñado y Construido por Carlos Peñaranda <br> 2022</a></p>
+        </div>
+    </body>
+</html>
