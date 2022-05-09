@@ -84,5 +84,3 @@ function mostrarConocimiento(elementID) {
             break;
     }
 }
-
-alert(`¡Actualmente sigo trabajando en la web!`)
