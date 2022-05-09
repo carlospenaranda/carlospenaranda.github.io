@@ -57,6 +57,10 @@
 }
 
 .pDescripcion {
+   width: 500px;
+}
+
+.pDescripcion {
     color: rgba(255, 255, 255, 0.555);
 }
 
@@ -120,12 +124,14 @@
     height: 250px;
     border: 2px solid var(--color-main);
     transform: translateY(15px) translateX(15px);
+
+    position: absolute;
 }
 
 .sFoto img {
     width: 250px;
     height: 250px;
-    position: absolute;
+    position: relative;
 }
 
 #conocimientos {
@@ -156,12 +162,12 @@
     margin-bottom: 20px;
 }
 
-.cDescripcion > ul > li{
+.cDescripcion > ul > li {
     list-style-type: none;
     height: 27px;
 }
 
-.cDescripcion > ul > li > button{
+.cDescripcion > ul > li > button {
     width: 100%;
     height: 100%;
     padding: 0 10px 0 10px;
@@ -171,7 +177,7 @@
     box-sizing: content-box;
 }
 
-.cDescripcion > ul > li > button:hover{
+.cDescripcion > ul > li > button:hover {
     color: var(--color-main);
     border-bottom: 1px solid var(--color-main);
 }
@@ -262,6 +268,40 @@
     text-align: center;
 }
 
-#footer p a{
+#footer p a {
     font-size: 15px;
+}
+
+@media screen and (max-width: 1500px) {
+    #sobreMi > div > div {
+        flex-direction: column;
+    }
+
+    .sFoto {
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sDescripcion {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sDescripcion ul {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    #conocimientos {
+        width: 100%;
+    }
+
+    .pDescripcion {
+        width: 300px;
+    }
 }
